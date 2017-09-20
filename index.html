@@ -9,7 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="drawing-app.js"></script>
-	<div class="dive"></div>
+	<canvas class="canvas1 domo" id="myCanvas"></canvas>
 	<div class="container smaller">
 	  <h2>settings</h2>
 	  <p>Change the brush size and color.
@@ -19,7 +19,6 @@
 	  <ul class="nav nav-tabs">
 	    <li class="active"><a data-toggle="tab" href="#home">Brush</a></li>
 	    <li><a data-toggle="tab" href="#menu1">Color picker</a></li>
-	    <li><a data-toggle="tab" href="#menu2">Advanced color picker</a></li>
 	  </ul>
 
 	  <div class="tab-content">
@@ -41,7 +40,9 @@
 			</div>
 	    </div>
 	    <div id="menu1" class="tab-pane fade plate menu1">
-		    <h3>Pick a color below.</h3>
+	    	<h3>Pick a color below.</h3>
+		    <input value="#ffffff" class="inputingcolor" type="color" name="color">
+		    <button type="color" class="btn btn-primary addColor">Add color</button>
 		    <div class="colorp" style="background-color:blue;"></div>
 		    <div class="colorp" style="background-color:green;"></div>
 		    <div class="colorp" style="background-color:yellow;"></div>
@@ -49,13 +50,9 @@
 		    <div class="colorp" style="background-color:purple;"></div>
 		    <div class="colorp" style="background-color:red;"></div>
 		    <div class="colorp" style="background-color:white; border:1px solid black;"></div>
+		    
 	    </div>
-	    <div id="menu2" class="tab-pane fade menu2">
-	    	<H3>Use the color picker below.</H3>
-	    	<input value="#ffffff" class="inputingcolor" type="color" name="color">
-	    	<p>add this color to the ragular color picker</p>
-	    	<button type="button" class="btn btn-primary addColor">Add color</button>
-	    </div>
+	    
 	  </div>
 	</div>
 </body>
