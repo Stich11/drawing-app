@@ -23,7 +23,7 @@
 	  </ul>
 
 	  <div class="tab-content">
-	    <div id="home" class="tab-pane fade in active">
+	    <div id="home" class="tab-pane fade in active home">
 	      <div class="container smaller">
 			  <h2>Pick a brush shape</h2>
 			  <form>
@@ -40,23 +40,21 @@
 			  <div class="demo smaller"></div>
 			</div>
 	    </div>
-	    <div id="menu1" class="tab-pane fade">
+	    <div id="menu1" class="tab-pane fade plate menu1">
 		    <h3>Pick a color below.</h3>
-		    <div class="colorp blue"></div>
-		    <div class="colorp green"></div>
-		    <div class="colorp yellow"></div>
-		    <div class="colorp orange"></div>
-		    <div class="colorp purple"></div>
-		    <div class="colorp red"></div>
-		    <div class="colorp white" style="border:1px solid black;"></div>
+		    <div class="colorp" style="background-color:blue;"></div>
+		    <div class="colorp" style="background-color:green;"></div>
+		    <div class="colorp" style="background-color:yellow;"></div>
+		    <div class="colorp" style="background-color:orange;"></div>
+		    <div class="colorp" style="background-color:purple;"></div>
+		    <div class="colorp" style="background-color:red;"></div>
+		    <div class="colorp" style="background-color:white; border:1px solid black;"></div>
 	    </div>
-	    <div id="menu2" class="tab-pane fade">
+	    <div id="menu2" class="tab-pane fade menu2">
 	    	<H3>Use the color picker below.</H3>
-	    	<p>click to toggle between the advanced colorpicker and the ragular color picker.</p>
-	    	<label class="switch">
-			  <input class="toggleinput" type="checkbox">
-			</label>	
 	    	<input value="#ffffff" class="inputingcolor" type="color" name="color">
+	    	<p>add this color to the ragular color picker</p>
+	    	<button type="button" class="btn btn-primary addColor">Add color</button>
 	    </div>
 	  </div>
 	</div>
